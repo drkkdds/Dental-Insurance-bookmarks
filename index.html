@@ -11,13 +11,28 @@
             text-align: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
         }
+        .categories-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
         .category {
+            width: 48%;
             margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: left;
         }
         h2 {
+            color: #0056b3;
+            font-size: 22px;
+            margin-top: 20px;
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
         }
@@ -27,10 +42,10 @@
         }
         .link-list li {
             margin: 10px 0;
+            font-size: 16px;
         }
         .link-list a {
             text-decoration: none;
-            font-size: 18px;
             color: #007BFF;
             font-weight: bold;
         }
@@ -41,21 +56,30 @@
             max-width: 400px;
             margin-bottom: 20px;
         }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e3f2fd;
+            border-top: 2px solid #0056b3;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-         <div class="container">
         <p><strong>Reference:</strong> <a href="https://docs.google.com/spreadsheets/d/1rhtndmr_x-ywiX-LKzmoOoIb93d8UqGy/edit?usp=sharing&ouid=104306765937406728371&rtpof=true&sd=true" target="_blank">View Shared Spreadsheet</a></p>
 
         <img src="https://i.imgur.com/budlZTi.png" alt="KK Dental Logo" class="logo">
         <h1>List of Dental Insurances accepted at KK Dental</h1>
         
-        <div class="category">
-            <h2 style="color: #0056b3; font-size: 22px; margin-top: 20px;">Dental Insurance with Registered Provider Portals</h2>
-            <ul class="link-list" style="padding: 10px; border: 1px solid #ddd; border-radius: 10px; background-color: #f9f9f9; text-align: left; display: inline-block;">
-               
-                <li style="margin: 8px 0; font-size: 16px;"><a href="https://www.aetna.com/provweb/" target="_blank">Aetna Dental Insurance</a></li>
+        <div class="categories-container">
+            <div class="category">
+                <h2>Dental Insurance with Registered Provider Portals</h2>
+                <ul class="link-list">
+                   <li style="margin: 8px 0; font-size: 16px;"><a href="https://www.aetna.com/provweb/" target="_blank">Aetna Dental Insurance</a></li>
                 <li style="margin: 8px 0; font-size: 16px;"><a href="https://www.ameritas.com/service/login.asp" target="_blank">Ameritas Dental Insurance</a></li>
                 <li style="margin: 8px 0; font-size: 16px;"><a href="https://cignaforhcp.cigna.com/app/login" target="_blank">Cigna Dental Insurance</a></li>
                  <li style="margin: 8px 0; font-size: 16px;"><a href="https://www1.deltadentalins.com/deltacare-usa.html" target="_blank">DeltaCare USA</a></li>
@@ -96,23 +120,23 @@ function openInEdge(url) {
                 <li style="margin: 8px 0; font-size: 16px;"><a href="https://providers.dentaquest.com/onboarding/start/" target="_blank">Sunlife Insurance</a></li>
                 <li style="margin: 8px 0; font-size: 16px;"><a href="https://www.unitedconcordia.com/business-services/dentists/get-started" target="_blank">United Concordia</a></li>
                 <li style="margin: 8px 0; font-size: 16px;"><a href="https://www.dbp.com/" target="_blank">United Health Care</a></li>
-            </ul>
-        </div>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2>Dental Insurance Tools</h2>
+                <ul class="link-list">
+                    <li><a href="https://apps.availity.com/web/onboarding/availity-fr-ui/#/login" target="_blank">Availity</a></li>
+                    <li><a href="https://register.dentalxchange.com/reg/login?1" target="_blank">DentalXchange</a></li>
+                    <li><a href="https://www.dentalofficetoolkit.com/dot-ui/login" target="_blank">Delta Dental toolkit</a></li>
+                    <li><a href="https://deltadentalks.com/" target="_blank">Delta Dental Talks</a></li>
+                    <li><a href="https://www.dnoaconnect.com/#!/lookup" target="_blank">DNoA Connect</a></li>
+                    <li><a href="https://www.providerpayments.com/Login.aspx?ReturnUrl=%2fInquiry.aspx" target="_blank">Echo Payments</a></li>
+                    <li><a href="https://auth.nexhealth.com/login" target="_blank">NexHealth</a></li>
+                </ul>
+            </div>
         
-        <div class="category">
-            <h2 style="color: #0056b3; font-size: 22px; margin-top: 20px;">Dental Insurance Tools</h2>
-            <ul class="link-list" style="padding: 10px; border: 1px solid #ddd; border-radius: 10px; background-color: #f9f9f9; text-align: left; display: inline-block;">
-                 <li style="margin: 8px 0; font-size: 16px;"><a href="https://apps.availity.com/web/onboarding/availity-fr-ui/#/login" target="_blank">Availity</a></li>
-              <li style="margin: 8px 0; font-size: 16px;"><a href="https://register.dentalxchange.com/reg/login?1" target="_blank">DentalXchange</a></li>
-                <li style="margin: 8px 0; font-size: 16px;"><a href="https://www.dentalofficetoolkit.com/dot-ui/login" target="_blank">Delta Dental toolkit</a></li>
-                 <li style="margin: 8px 0; font-size: 16px;"><a href="https://deltadentalks.com/" target="_blank">Delta Dental Talks</a></li>
-                <li style="margin: 8px 0; font-size: 16px;"><a href="https://www.dnoaconnect.com/#!/lookup" target="_blank">DNoA Connect</a></li>
-                <li style="margin: 8px 0; font-size: 16px;"><a href="https://www.providerpayments.com/Login.aspx?ReturnUrl=%2fInquiry.aspx" target="_blank">Echo Payments</a></li>
-                            <li style="margin: 8px 0; font-size: 16px;"><a href="https://auth.nexhealth.com/login" target="_blank">NexHealth</a></li>
-                
-            </ul>
-        </div>
-             <div class="category">
+<div class="category">
             <h2 style="color: #0056b3; font-size: 22px; margin-top: 20px;">Dental Insurances We Also Accept Without Link or Provider Portal</h2>
            <li style="margin: 8px 0; font-size: 16px;">AARP Dental Insurance</li>
                 <li style="margin: 8px 0; font-size: 16px;">AFLAC GA-GRP</li>
@@ -146,11 +170,11 @@ function openInEdge(url) {
             </ul>
         </div>
     </div>
-        
+
+        <footer>
+            <p><strong>Note:</strong> Please do not create multiple usernames for insurance portals. Use the usernames and passwords provided by the Billing Department.</p>
+            <p><strong>Reference:</strong> <a href="https://docs.google.com/spreadsheets/d/1rhtndmr_x-ywiX-LKzmoOoIb93d8UqGy/edit?usp=sharing&ouid=104306765937406728371&rtpof=true&sd=true" target="_blank">View Shared Spreadsheet</a></p>
+        </footer>
     </div>
-    <footer style="margin-top: 40px; padding: 20px; background-color: #e3f2fd; border-top: 2px solid #0056b3; font-size: 16px; color: #333; text-align: center; border-radius: 10px;">
-         <p><strong>Note:</strong> Please do not create multiple usernames for insurance portals. Use the usernames and passwords provided by the Billing Department.To get the access to passwords click the link below.</p>
-            <p><strong>Reference:</strong> <a href="https://docs.google.com/spreadsheets/d/1rhtndmr_x-ywiX-LKzmoOoIb93d8UqGy/edit?usp=sharing&ouid=104306765937406728371&rtpof=true&sd=true" target="_blank">View Shared Spreadsheet</a></p
-    </footer>
 </body>
 </html>
